@@ -41,3 +41,12 @@ Original source: https://github.com/explosion/spacy-notebooks
 
 
 
+## spacy.displacy.serve raises TypeError
+
+TypeError: __init__() got an unexpected keyword argument 'encoding'
+
+Solution source: https://github.com/explosion/spaCy/issues/2810
+Current workaround: 
+```shell
+pip install "msgpack-numpy<0.4.4.0"
+```
