@@ -27,8 +27,12 @@ pip3 install jupyter
 # Install spaCy
 pip install spacy
 
-# Install spaCy English model
+# Install scipy, needed for some examples
+pip install scipy
+
+# Install spaCy English models
 python -m spacy download en
+python -m spacy download en_core_web_lg
 
 # Run Jupyter (from withing the folder with the virtualenv folder)
 jupyter notebook
