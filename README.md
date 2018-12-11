@@ -54,3 +54,28 @@ Current workaround:
 ```shell
 pip install "msgpack-numpy<0.4.4.0"
 ```
+
+## slides
+
+[Source](https://medium.com/learning-machine-learning/present-your-data-science-projects-with-jupyter-slides-75f20735eb0f)
+
+### Generate HTML file with the slides
+
+```shell
+jupyter nbconvert 00_jupyter_intro.ipynb --to slides
+```
+
+### Serve Locally and Iterate
+
+```shell
+jupyter nbconvert 00_jupyter_intro.ipynb --to slides --post serve 
+--SlidesExporter.reveal_theme=serif 
+--SlidesExporter.reveal_scroll=True 
+--SlidesExporter.reveal_transition=none
+```
+
+Brief overview of configuration used :
+
+- **SlidesExporter.reveal_theme**: sets the theme to serif. [https://github.com/hakimel/reveal.js/tree/master/css/theme](https://github.com/hakimel/reveal.js/tree/master/css/theme) has list of themes that ship by default with reveal.js: night, simple, sky, league, blood...
+- **SlidesExporter.reveal_scroll**: sets the scrolling option to True. For big images or long cells scrolling options are helpful. It’s also helpful for visualizing dataframes.
+- **SlidesExporter.reveal_transition**: Sets the transition to None. I don’t like to use any transition effect because adding them creates a sort of jerkiness to the screen which I believe to be unsuitable for code. The optins are : none, fade, slide, convex, concave and zoom.
