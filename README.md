@@ -13,10 +13,18 @@ Original source: https://github.com/explosion/spacy-notebooks
 
 ## Requirements
 
-* Python3 
-* Jupyter Notebook
+See installation example
+
+* python 3
+* ipdb
+* jupyter
 * spacy
 * scipy
+* nltk
+* pandas
+* matplotlib
+* seaborn
+* wordcloud
 * nltk
 * spaCy English en model: python -m spacy download en
 * spaCy English en_core_web_lg model: python -m spacy download en_core_web_lg
