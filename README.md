@@ -17,8 +17,9 @@ Original source: https://github.com/explosion/spacy-notebooks
 * Jupyter Notebook
 * spacy
 * scipy
-* spaCy English model: python -m spacy download en
-
+* nltk
+* spaCy English en model: python -m spacy download en
+* spaCy English en_core_web_lg model: python -m spacy download en_core_web_lg
 
 
 
@@ -56,11 +57,18 @@ Now lets install the required packages and spaCy models in our new environment:
 
 ```shell
 
+$ pip install ipdb
 $ pip install jupyter
 $ pip install spacy
 $ pip install scipy
+$ pip install nltk
+$ pip install pandas
+$ pip install matplotlib
+$ pip install seaborn
+$ pip install wordcloud
 
 $ python -m spacy download en
+$ python -m spacy download en_core_web_lg
 ```
 
 Lastly, clone the repository and run jupyter notebook within the project folder:
